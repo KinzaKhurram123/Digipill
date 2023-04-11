@@ -1,28 +1,21 @@
 import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
-import Logo from '../../Components/ImageView/logo'
-import Background from '../../Components/Header-Bar/background'
 import Anotherbackground from '../../Components/Header-Bar/background'
-
-
+import { images } from '../../Components/Constant'
 const Splash = ({navigation}) => {
     setTimeout(() =>{
         navigation.navigate('Start')
-       }, 3000 )
+       }, 5000 )
   return (
-      <Anotherbackground>
-        
-      </Anotherbackground>
-    
+     <View style={styles.Splash}>
+      <Image source={images.splash_background}/>
+     </View>
   )
 }
-
 export default Splash
 
 const styles = StyleSheet.create({
 Splash:{
   flex : 1,
-  alignItems:'center'  
 }
-
 })

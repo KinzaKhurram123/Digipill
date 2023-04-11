@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, View, ScrollView} from 'react-native';
-import COLORS from '../../Theme/Colors';
+import COLORS from '../Constant/theme';
 
 export default function Container({children, scroll}) {
   return (
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
   },
   container2: {
-    flexGrow: 1,
-    backgroundColor:"#092143"
+    flex: 1,
+    backgroundColor:"white"
   },
 });
